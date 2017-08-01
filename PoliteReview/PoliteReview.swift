@@ -31,6 +31,10 @@ public class PoliteReview {
         incrementVersionLaunch()
     }
     
+    public init() {
+        
+    }
+    
     private func incrementTotalLaunch() {
         // Keep track of how many times the app has been launched
         let totalLaunchCount = UserDefaults.standard.integer(forKey: UserDefaultKeys.PoliteReviewTotalLaunchCount.rawValue)
