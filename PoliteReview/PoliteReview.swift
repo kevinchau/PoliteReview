@@ -27,6 +27,7 @@ public class PoliteReview {
         PoliteReview.storeID = itunesID
         PoliteReview.contactURL = contactURL
         PoliteReview.contactEmail = contactEmail
+        PoliteReview.triggerCount = triggerCount
         incrementTotalLaunch()
         incrementVersionLaunch()
     }

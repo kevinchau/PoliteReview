@@ -11,9 +11,9 @@ import UIKit
 import StoreKit
 import MessageUI
 
-public class RequestPoliteReview: UIViewController, MFMailComposeViewControllerDelegate {
+extension UIViewController: MFMailComposeViewControllerDelegate {
     
-    public func request() {
+    public func requestPoliteReview() {
         // Presents a UIAlertController for the initial prompt
         let appName = Bundle.main.localizedInfoDictionary?["CFBundleDisplayName"]
         
@@ -46,7 +46,7 @@ public class RequestPoliteReview: UIViewController, MFMailComposeViewControllerD
         alertController.addAction(action2)
         
         if PoliteReview().shouldPresent() == true {
-            present(alertController, animated: true, completion: nil)
+            self.present(alertController, animated: true, completion: nil)
         }
         
     }
