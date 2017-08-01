@@ -57,6 +57,7 @@ class ViewController: UIViewController {
     ...
     RequestPoliteReview().request()
     }
+}
         
 ```
 
