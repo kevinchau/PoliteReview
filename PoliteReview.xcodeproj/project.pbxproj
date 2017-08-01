@@ -14,6 +14,7 @@
 		0AF1FBCF1F303E0C00959CF5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1FBCE1F303E0C00959CF5 /* .gitignore */; };
 		0AF1FBD11F3041C600959CF5 /* PoliteReview.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1FBD01F3041C600959CF5 /* PoliteReview.podspec */; };
 		0AF1FBD31F30422300959CF5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1FBD21F30422300959CF5 /* LICENSE */; };
+		0AF1FBD51F3042B100959CF5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1FBD41F3042B100959CF5 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		0AF1FBCE1F303E0C00959CF5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0AF1FBD01F3041C600959CF5 /* PoliteReview.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PoliteReview.podspec; sourceTree = "<group>"; };
 		0AF1FBD21F30422300959CF5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0AF1FBD41F3042B100959CF5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 		0A5820661F30223C001FBB16 = {
 			isa = PBXGroup;
 			children = (
+				0AF1FBD41F3042B100959CF5 /* README.md */,
 				0AF1FBD21F30422300959CF5 /* LICENSE */,
 				0AF1FBD01F3041C600959CF5 /* PoliteReview.podspec */,
 				0AF1FBCE1F303E0C00959CF5 /* .gitignore */,
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF1FBD51F3042B100959CF5 /* README.md in Sources */,
 				0AF1FBC11F303AAB00959CF5 /* RequestPoliteReview.swift in Sources */,
 				0A58207C1F3022D4001FBB16 /* PoliteReview.swift in Sources */,
 			);
