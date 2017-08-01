@@ -1,11 +1,18 @@
 # PoliteReview
 A Polite Way to Request Reviews for iOS
 
+<img src="/screenshots/screencap-1.png" width="375" height="667" />
+
 # Features
 Polite Review is an elegant way to request ratings and reviews from your users.
 
+* Automatically grabs your localized app name and uses "this app" as a default.
+* Localized, curently English, Chinese Simplied, and Chinese Traditional.
+
 * For 10.3 and above, uses `StoreKit` to request reviews, in compliance with store guidelines.
 * For below 10.3, falls back to a simple alert which will open the App Store to the review page.
+
+<img src="/screenshots/screencap-3.png" width="375" height="667" />
 
 ## Coming Soon
 
