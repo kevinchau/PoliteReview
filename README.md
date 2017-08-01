@@ -52,7 +52,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 * Your iTunes App ID is a string of numbers, found in iTunes connect.
 * Trigger count is the minimum number of times your app has been launched before any alerts are shown. If no value is specified, it will default to 5.
 
-In any ViewController, you can request a review by calling `RequestPoliteReview().request()`. PoliteReview will determine if an alert will be shown.
+In any ViewController, you can request a review by calling `requestPoliteReview()`. PoliteReview will determine if an alert will be shown.
 
 Example:
 
@@ -64,8 +64,7 @@ class ViewController: UIViewController {
     ...
     requestPoliteReview()
     }
-}
-        
+}    
 ```
 
 
