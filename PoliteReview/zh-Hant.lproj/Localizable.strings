@@ -1,0 +1,33 @@
+
+/* For the alert controller preceding the app name */
+"Do you love" = "你喜歡用";
+
+/* Message for the alert controller */
+"Give Us Your Feedback" = "希望你能提出用後意見";
+
+/* Message when user does not love your app */
+"Let us know how to improve." = "請跟我們分享改善建議。";
+
+/* Alert Action */
+"No" = "不喜歡";
+
+/* Alert Action */
+"Not Now" = "不要";
+
+/* Alert title when user does not love your app */
+"Oh No!" = "糟糕！";
+
+/* Ask legacy user for review */
+"Please Consider Writing a Review" = "請考慮留下你的意見";
+
+/* alert action */
+"Send Feedback" = "提交意見";
+
+/* Message when user love app */
+"Thank You!" = "";
+
+/* Alert Action */
+"Write Review" = "感謝！";
+
+/* Alert Action */
+"Yes" = "喜歡";

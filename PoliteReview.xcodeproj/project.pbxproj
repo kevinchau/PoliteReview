@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0A5820751F30223C001FBB16 /* PoliteReview.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A5820731F30223C001FBB16 /* PoliteReview.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A58207C1F3022D4001FBB16 /* PoliteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58207B1F3022D4001FBB16 /* PoliteReview.swift */; };
+		0AF1FBC11F303AAB00959CF5 /* RequestPoliteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1FBC01F303AAB00959CF5 /* RequestPoliteReview.swift */; };
+		0AF1FBCA1F303CDC00959CF5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1FBCC1F303CDC00959CF5 /* Localizable.strings */; };
+		0AF1FBCF1F303E0C00959CF5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1FBCE1F303E0C00959CF5 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A5820701F30223C001FBB16 /* PoliteReview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PoliteReview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5820731F30223C001FBB16 /* PoliteReview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoliteReview.h; sourceTree = "<group>"; };
 		0A5820741F30223C001FBB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A58207B1F3022D4001FBB16 /* PoliteReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliteReview.swift; sourceTree = "<group>"; };
+		0AF1FBC01F303AAB00959CF5 /* RequestPoliteReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestPoliteReview.swift; sourceTree = "<group>"; };
+		0AF1FBCB1F303CDC00959CF5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0AF1FBCD1F303D7A00959CF5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0AF1FBCE1F303E0C00959CF5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +39,7 @@
 		0A5820661F30223C001FBB16 = {
 			isa = PBXGroup;
 			children = (
+				0AF1FBCE1F303E0C00959CF5 /* .gitignore */,
 				0A5820721F30223C001FBB16 /* PoliteReview */,
 				0A5820711F30223C001FBB16 /* Products */,
 			);
@@ -48,6 +58,9 @@
 			children = (
 				0A5820731F30223C001FBB16 /* PoliteReview.h */,
 				0A5820741F30223C001FBB16 /* Info.plist */,
+				0A58207B1F3022D4001FBB16 /* PoliteReview.swift */,
+				0AF1FBC01F303AAB00959CF5 /* RequestPoliteReview.swift */,
+				0AF1FBCC1F303CDC00959CF5 /* Localizable.strings */,
 			);
 			path = PoliteReview;
 			sourceTree = "<group>";
@@ -96,6 +109,7 @@
 					0A58206F1F30223C001FBB16 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = FTHBLX7S63;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -106,6 +120,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hant",
+				"zh-Hans",
 			);
 			mainGroup = 0A5820661F30223C001FBB16;
 			productRefGroup = 0A5820711F30223C001FBB16 /* Products */;
@@ -122,6 +138,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF1FBCF1F303E0C00959CF5 /* .gitignore in Resources */,
+				0AF1FBCA1F303CDC00959CF5 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,16 +150,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF1FBC11F303AAB00959CF5 /* RequestPoliteReview.swift in Sources */,
+				0A58207C1F3022D4001FBB16 /* PoliteReview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0AF1FBCC1F303CDC00959CF5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AF1FBCB1F303CDC00959CF5 /* zh-Hant */,
+				0AF1FBCD1F303D7A00959CF5 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0A5820761F30223C001FBB16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -180,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -196,6 +229,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -228,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -242,6 +276,7 @@
 		0A5820791F30223C001FBB16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FTHBLX7S63;
@@ -254,6 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.likelylabs.PoliteReview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,6 +297,7 @@
 		0A58207A1F30223C001FBB16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FTHBLX7S63;
@@ -296,6 +333,7 @@
 				0A58207A1F30223C001FBB16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
