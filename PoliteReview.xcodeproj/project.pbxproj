@@ -12,6 +12,8 @@
 		0AF1FBC11F303AAB00959CF5 /* RequestPoliteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1FBC01F303AAB00959CF5 /* RequestPoliteReview.swift */; };
 		0AF1FBCA1F303CDC00959CF5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1FBCC1F303CDC00959CF5 /* Localizable.strings */; };
 		0AF1FBCF1F303E0C00959CF5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1FBCE1F303E0C00959CF5 /* .gitignore */; };
+		0AF1FBD11F3041C600959CF5 /* PoliteReview.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1FBD01F3041C600959CF5 /* PoliteReview.podspec */; };
+		0AF1FBD31F30422300959CF5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1FBD21F30422300959CF5 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		0AF1FBCB1F303CDC00959CF5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0AF1FBCD1F303D7A00959CF5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0AF1FBCE1F303E0C00959CF5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0AF1FBD01F3041C600959CF5 /* PoliteReview.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PoliteReview.podspec; sourceTree = "<group>"; };
+		0AF1FBD21F30422300959CF5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,8 @@
 		0A5820661F30223C001FBB16 = {
 			isa = PBXGroup;
 			children = (
+				0AF1FBD21F30422300959CF5 /* LICENSE */,
+				0AF1FBD01F3041C600959CF5 /* PoliteReview.podspec */,
 				0AF1FBCE1F303E0C00959CF5 /* .gitignore */,
 				0A5820721F30223C001FBB16 /* PoliteReview */,
 				0A5820711F30223C001FBB16 /* Products */,
@@ -138,7 +144,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF1FBD11F3041C600959CF5 /* PoliteReview.podspec in Resources */,
 				0AF1FBCF1F303E0C00959CF5 /* .gitignore in Resources */,
+				0AF1FBD31F30422300959CF5 /* LICENSE in Resources */,
 				0AF1FBCA1F303CDC00959CF5 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
