@@ -19,7 +19,7 @@ The best way to get started with PoliteReview is with Carthage(coming soon) and 
 
 ## Installation with CocoaPods
 ```ruby
-pod 'Gloss'
+pod 'PoliteReview'
 ```
 
 ## Installation with Carthage
