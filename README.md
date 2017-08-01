@@ -1,7 +1,7 @@
 # PoliteReview
 A Polite Way to Request Reviews for iOS
 
-<img src="/screenshots/screencap-1.png" width="375" height="667" />
+<img src="/screenshots/screencap-1.png" width="188" height="334" />
 
 # Features
 Polite Review is an elegant way to request ratings and reviews from your users.
@@ -12,7 +12,7 @@ Polite Review is an elegant way to request ratings and reviews from your users.
 * For 10.3 and above, uses `StoreKit` to request reviews, in compliance with store guidelines.
 * For below 10.3, falls back to a simple alert which will open the App Store to the review page.
 
-<img src="/screenshots/screencap-3.png" width="375" height="667" />
+<img src="/screenshots/screencap-3.png" width="188" height="334" />
 
 ## Coming Soon
 
