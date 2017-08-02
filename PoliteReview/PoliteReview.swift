@@ -17,9 +17,9 @@ import Foundation
 
 public class PoliteReview {
     
-    static private(set) var storeID: String = ""
-    static private(set) var contactURL: String = ""
-    static private(set) var contactEmail: String = ""
+    static private(set) var storeID: String = "0000000000"
+    static private(set) var contactURL: String = "https://www.google.com"
+    static private(set) var contactEmail: String = "placeholder@gmail.com"
     static private(set) var triggerCount: Int = 5
     static public let main = PoliteReview()
     
