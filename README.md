@@ -25,12 +25,12 @@ Polite Review is an elegant way to request ratings and reviews from your users.
 The best way to get started with PoliteReview is with Carthage(coming soon) and CocoaPods.
 
 ## Installation with CocoaPods
-```ruby
+```swift
 pod 'PoliteReview'
 ```
 
 ## Installation with Carthage
-```
+```swift
 coming soon
 ```
 
@@ -38,7 +38,7 @@ coming soon
 
 Add PoliteReview to `AppDelegate`
 
-```
+```swift
 import PoliteReview
 
 ...
@@ -56,7 +56,7 @@ In any ViewController, you can request a review by calling `requestPoliteReview(
 
 Example:
 
-```
+```swift
 class ViewController: UIViewController {
 ...
 
