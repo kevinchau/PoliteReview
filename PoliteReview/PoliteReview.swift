@@ -8,20 +8,20 @@
 
 import Foundation
 
-
-internal enum UserDefaultKeys: String {
-    case PoliteReviewTotalLaunchCount
-    case PoliteReviewVersionLaunchCount
-    case PoliteReviewReviewedVersion
-    case PoliteReviewHasReviewed
+ enum UserDefaultKeys: String {
+    case politeReviewTotalLaunchCount
+    case politeReviewVersionLaunchCount
+    case politeReviewReviewedVersion
+    case politeReviewHasReviewed
 }
 
 public class PoliteReview {
     
-    static private(set) internal var storeID: String = ""
-    static private(set) internal var contactURL: String = ""
-    static private(set) internal var contactEmail: String = ""
+    static private(set) var storeID: String = "0000000000"
+    static private(set) var contactURL: String = "https://www.google.com"
+    static private(set) var contactEmail: String = "placeholder@gmail.com"
     static private(set) var triggerCount: Int = 5
+    static public let main = PoliteReview()
     
     public func setup(itunesID: String, contactURL: String, contactEmail: String, triggerCount: Int = 5) {
         PoliteReview.storeID = itunesID
@@ -32,39 +32,37 @@ public class PoliteReview {
         incrementVersionLaunch()
     }
     
-    public init() {
-        
+    private init() {
+        // init is private to force use of singleton
     }
     
     private func incrementTotalLaunch() {
         // Keep track of how many times the app has been launched
-        let totalLaunchCount = UserDefaults.standard.integer(forKey: UserDefaultKeys.PoliteReviewTotalLaunchCount.rawValue)
-        UserDefaults.standard.set(totalLaunchCount + 1, forKey: UserDefaultKeys.PoliteReviewTotalLaunchCount.rawValue)
-        UserDefaults.standard.synchronize()
+        let totalLaunchCount = UserDefaults.standard.integer(forKey: UserDefaultKeys.politeReviewTotalLaunchCount.rawValue)
+        UserDefaults.standard.set(totalLaunchCount + 1, forKey: UserDefaultKeys.politeReviewTotalLaunchCount.rawValue)
     }
     
     private func incrementVersionLaunch() {
         let currentVersion = getVersion()
         
         // Reset the counter if the current app version is newer than a previous reviewed version
-        if let storedVersion = UserDefaults.standard.string(forKey: UserDefaultKeys.PoliteReviewReviewedVersion.rawValue) {
+        if let storedVersion = UserDefaults.standard.string(forKey: UserDefaultKeys.politeReviewReviewedVersion.rawValue) {
             if currentVersion.compare(storedVersion, options: NSString.CompareOptions.numeric) != ComparisonResult.orderedDescending {
-                UserDefaults.standard.set(0, forKey: UserDefaultKeys.PoliteReviewVersionLaunchCount.rawValue)
+                UserDefaults.standard.set(0, forKey: UserDefaultKeys.politeReviewVersionLaunchCount.rawValue)
             }
         }
         
         // Keep track of how many times this particular version has been launched
-        let currentCount = UserDefaults.standard.integer(forKey: UserDefaultKeys.PoliteReviewVersionLaunchCount.rawValue)
-        UserDefaults.standard.set(currentCount + 1, forKey: UserDefaultKeys.PoliteReviewVersionLaunchCount.rawValue)
-        UserDefaults.standard.synchronize()
+        let currentCount = UserDefaults.standard.integer(forKey: UserDefaultKeys.politeReviewVersionLaunchCount.rawValue)
+        UserDefaults.standard.set(currentCount + 1, forKey: UserDefaultKeys.politeReviewVersionLaunchCount.rawValue)
     }
     
-    internal func shouldPresent() -> Bool {
+    func shouldPresent() -> Bool {
         // Determines if a review should be presented based on a new version and if the user has been prompted before
         var should = false
         let currentVersion = getVersion()
-        let hasReviewed = UserDefaults.standard.bool(forKey: UserDefaultKeys.PoliteReviewHasReviewed.rawValue)
-        let versionCount = UserDefaults.standard.integer(forKey: UserDefaultKeys.PoliteReviewVersionLaunchCount.rawValue)
+        let hasReviewed = UserDefaults.standard.bool(forKey: UserDefaultKeys.politeReviewHasReviewed.rawValue)
+        let versionCount = UserDefaults.standard.integer(forKey: UserDefaultKeys.politeReviewVersionLaunchCount.rawValue)
         
         if versionCount >= PoliteReview.triggerCount {
             if let storedVersion = UserDefaults.standard.string(forKey: "reviewVersion") {
@@ -79,7 +77,7 @@ public class PoliteReview {
         return should
     }
     
-    internal func getVersion() -> String {
+    func getVersion() -> String {
         // Get current app version string
         guard let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else {
             return "0.0.0"

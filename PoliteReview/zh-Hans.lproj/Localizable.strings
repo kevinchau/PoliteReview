@@ -1,4 +1,7 @@
 
+/* Used for question particle */
+"?" = "吗？";
+
 /* For the alert controller preceding the app name */
 "Do you love" = "你喜欢用";
 
@@ -24,7 +27,10 @@
 "Send Feedback" = "提交意见";
 
 /* Message when user love app */
-"Thank You!" = "";
+"Thank You!" = "谢谢！";
+
+/* Placeholder app name */
+"this app" = "此应用程式";
 
 /* Alert Action */
 "Write Review" = "感谢！";
