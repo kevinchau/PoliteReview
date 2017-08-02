@@ -40,7 +40,6 @@ public class PoliteReview {
         // Keep track of how many times the app has been launched
         let totalLaunchCount = UserDefaults.standard.integer(forKey: UserDefaultKeys.politeReviewTotalLaunchCount.rawValue)
         UserDefaults.standard.set(totalLaunchCount + 1, forKey: UserDefaultKeys.politeReviewTotalLaunchCount.rawValue)
-        UserDefaults.standard.synchronize()
     }
     
     private func incrementVersionLaunch() {
@@ -56,7 +55,6 @@ public class PoliteReview {
         // Keep track of how many times this particular version has been launched
         let currentCount = UserDefaults.standard.integer(forKey: UserDefaultKeys.politeReviewVersionLaunchCount.rawValue)
         UserDefaults.standard.set(currentCount + 1, forKey: UserDefaultKeys.politeReviewVersionLaunchCount.rawValue)
-        UserDefaults.standard.synchronize()
     }
     
     func shouldPresent() -> Bool {

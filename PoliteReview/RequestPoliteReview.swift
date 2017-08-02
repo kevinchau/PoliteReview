@@ -115,7 +115,6 @@ extension UIViewController: MFMailComposeViewControllerDelegate {
         let currentVersion = PoliteReview.main.getVersion()
         UserDefaults.standard.set(true, forKey: UserDefaultKeys.politeReviewHasReviewed.rawValue)
         UserDefaults.standard.set(currentVersion, forKey: UserDefaultKeys.politeReviewReviewedVersion.rawValue)
-        UserDefaults.standard.synchronize()
     }
     
 }
