@@ -17,7 +17,10 @@ extension UIViewController: MFMailComposeViewControllerDelegate {
         // Presents a UIAlertController for the initial prompt
         let appName = Bundle.main.localizedInfoDictionary?["CFBundleDisplayName"]
         
-        let alertController = UIAlertController(title: String("\(NSLocalizedString("Do you love", comment: "For the alert controller preceding the app name")) \(appName ?? "this app")?"), message: NSLocalizedString("Give Us Your Feedback", comment: "Message for the alert controller"), preferredStyle: .alert)
+        
+        
+        
+        let alertController = UIAlertController(title: String("\(NSLocalizedString("Do you love", comment: "For the alert controller preceding the app name")) \(appName ?? NSLocalizedString("this app", comment: "Placeholder app name"))\(NSLocalizedString("?", comment: "Used for question particle"))"), message: NSLocalizedString("Give Us Your Feedback", comment: "Message for the alert controller"), preferredStyle: .alert)
         
         // They love it action
         let yesAction = UIAlertAction(title: NSLocalizedString("Yes", comment: "Alert Action"), style: .default) { (UIAlertAction) in

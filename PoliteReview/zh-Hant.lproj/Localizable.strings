@@ -24,10 +24,16 @@
 "Send Feedback" = "提交意見";
 
 /* Message when user love app */
-"Thank You!" = "";
+"Thank You!" = "多謝！";
+
+/* Placeholder app name */
+"this app" = "此應用程式";
 
 /* Alert Action */
 "Write Review" = "感謝！";
 
 /* Alert Action */
 "Yes" = "喜歡";
+
+/* Used for question particle */
+"?" = "嗎？";
