@@ -16,7 +16,6 @@ Polite Review is an elegant way to request ratings and reviews from your users.
 
 ## Coming Soon
 
-* Carthage Support
 * Notifications for analytics within your app
 * Swift 4
 
@@ -31,7 +30,7 @@ pod 'PoliteReview'
 
 ## Installation with Carthage
 ```
-coming soon
+github "kevinchau/PoliteReview"
 ```
 
 ## Usage
@@ -45,7 +44,7 @@ import PoliteReview
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-    PoliteReview().setup(itunesID: <your itunes id>, contactURL: <a link to a website contact page>, contactEmail: <your contact email>, triggerCount: <a launch count>)
+    PoliteReview.main.setup(itunesID: <your itunes id>, contactURL: <a link to a website contact page>, contactEmail: <your contact email>, triggerCount: <a launch count>)
     return true
 }
 ```

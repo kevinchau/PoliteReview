@@ -1,4 +1,7 @@
 
+/* Used for question particle */
+"?" = "嗎？";
+
 /* For the alert controller preceding the app name */
 "Do you love" = "你喜歡用";
 
@@ -34,6 +37,3 @@
 
 /* Alert Action */
 "Yes" = "喜歡";
-
-/* Used for question particle */
-"?" = "嗎？";
