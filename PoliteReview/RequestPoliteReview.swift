@@ -11,6 +11,12 @@ import UIKit
 import StoreKit
 import MessageUI
 
+public struct PoliteReviewNotification {
+    static let loveAlert = "loveAlert"
+    static let legacyReview = "legacyReview"
+    static let contactAction = "contactAction"
+}
+
 extension UIViewController: MFMailComposeViewControllerDelegate {
     
     public func requestPoliteReview() {
@@ -28,6 +34,9 @@ extension UIViewController: MFMailComposeViewControllerDelegate {
             // Sets the reviewed status and sets the reviewed version
             self.setUserDefaultsHasReviewed()
             
+            // Posts a Notification to Notification Center
+            NotificationCenter.default.post(name: .politeReviewLoveAlert, object: nil, userInfo: [PoliteReviewNotification.loveAlert: true])
+            
             // Requests a review via the StoreKit alert, or legacy if 10.3 is not available
             if #available(iOS 10.3, *) {
                 SKStoreReviewController.requestReview()
@@ -40,6 +49,10 @@ extension UIViewController: MFMailComposeViewControllerDelegate {
         let noAction = UIAlertAction(title: NSLocalizedString("No", comment: "Alert Action"), style: .cancel) { (UIAlertAction) in
             // Sets the reviewed status and sets the reviewed version
             self.setUserDefaultsHasReviewed()
+            
+            // Posts a Notification to Notification Center
+            NotificationCenter.default.post(name: .politeReviewLoveAlert, object: nil, userInfo: [PoliteReviewNotification.loveAlert: false])
+            
             // Initiates the contact process
             self.contact()
         }
@@ -67,9 +80,15 @@ extension UIViewController: MFMailComposeViewControllerDelegate {
                     UIApplication.shared.openURL(URL(string: openAppStoreForRating)!)
                 }
             }
+            
+            // Posts a Notification to Notification Center
+            NotificationCenter.default.post(name: .politeReviewLegacyRequest, object: nil, userInfo: [PoliteReviewNotification.legacyReview: true])
         }
         // Action to not write a review
-        let legacyDeclineAction = UIAlertAction(title: NSLocalizedString("Not Now", comment: "Alert Action"), style: .cancel, handler: nil)
+        let legacyDeclineAction = UIAlertAction(title: NSLocalizedString("Not Now", comment: "Alert Action"), style: .cancel) { (UIAlertAction) in
+            // Posts a Notification to Notification Center
+            NotificationCenter.default.post(name: .politeReviewLegacyRequest, object: nil, userInfo: [PoliteReviewNotification.legacyReview: false])
+        }
         // Adds the actions to the alert controller
         legacyAlertController.addAction(legacyWriteAction)
         legacyAlertController.addAction(legacyDeclineAction)
@@ -104,9 +123,13 @@ extension UIViewController: MFMailComposeViewControllerDelegate {
                     }
                 }
             }
+            
+            // Posts a Notification to Notification Center
+            NotificationCenter.default.post(name: .politeReviewContactAction, object: nil, userInfo: [PoliteReviewNotification.contactAction: true])
         }
         let declineContactAction = UIAlertAction(title: NSLocalizedString("Not Now", comment: "Alert Action"), style: .cancel) { (UIAlertAction) in
-            // stuff here
+            // Posts a Notification to Notification Center
+            NotificationCenter.default.post(name: .politeReviewContactAction, object: nil, userInfo: [PoliteReviewNotification.contactAction: false])
         }
         alertController.addAction(contactAction)
         alertController.addAction(declineContactAction)

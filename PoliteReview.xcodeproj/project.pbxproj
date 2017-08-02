@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A5820751F30223C001FBB16 /* PoliteReview.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A5820731F30223C001FBB16 /* PoliteReview.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A58207C1F3022D4001FBB16 /* PoliteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58207B1F3022D4001FBB16 /* PoliteReview.swift */; };
+		0A6F89881F3175E7006B1636 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F89871F3175E7006B1636 /* Notifications.swift */; };
 		0AF1FBC11F303AAB00959CF5 /* RequestPoliteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1FBC01F303AAB00959CF5 /* RequestPoliteReview.swift */; };
 		0AF1FBCA1F303CDC00959CF5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1FBCC1F303CDC00959CF5 /* Localizable.strings */; };
 		0AF1FBCF1F303E0C00959CF5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1FBCE1F303E0C00959CF5 /* .gitignore */; };
@@ -22,6 +23,7 @@
 		0A5820731F30223C001FBB16 /* PoliteReview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoliteReview.h; sourceTree = "<group>"; };
 		0A5820741F30223C001FBB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A58207B1F3022D4001FBB16 /* PoliteReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliteReview.swift; sourceTree = "<group>"; };
+		0A6F89871F3175E7006B1636 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		0AF1FBC01F303AAB00959CF5 /* RequestPoliteReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestPoliteReview.swift; sourceTree = "<group>"; };
 		0AF1FBCB1F303CDC00959CF5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0AF1FBCD1F303D7A00959CF5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				0A5820741F30223C001FBB16 /* Info.plist */,
 				0A58207B1F3022D4001FBB16 /* PoliteReview.swift */,
 				0AF1FBC01F303AAB00959CF5 /* RequestPoliteReview.swift */,
+				0A6F89871F3175E7006B1636 /* Notifications.swift */,
 				0AF1FBCC1F303CDC00959CF5 /* Localizable.strings */,
 			);
 			path = PoliteReview;
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6F89881F3175E7006B1636 /* Notifications.swift in Sources */,
 				0AF1FBD51F3042B100959CF5 /* README.md in Sources */,
 				0AF1FBC11F303AAB00959CF5 /* RequestPoliteReview.swift in Sources */,
 				0A58207C1F3022D4001FBB16 /* PoliteReview.swift in Sources */,

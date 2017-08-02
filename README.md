@@ -67,4 +67,31 @@ class ViewController: UIViewController {
 }    
 ```
 
+## Notifications
+PoliteReview supports KVO. You can use these to trigger analytics events, or for other things. They will report with `userInfo` for the result of the action, with yes as `true` and no as `false`
+
+`Notification.Name` is extended, and you may observe the following.
+* `.politeReviewLoveAlert` with `userInfo`: `PoliteReviewNotification.loveAlert`
+* `.politeReviewLegacyRequest` with `userInfo`: `PoliteReviewNotification.legacyReview`
+* `.politeReviewContactAction` with `userInfo`: `PoliteReviewNotification.contactAction`
+
+`.politeReviewLegacyRequest` is only posted when a user is below `10.3`.
+
+Usage:
+```swift
+// Register your observer
+NotificationCenter.default.addObserver(self, selector: #selector(observedMethod(_:)), name: .politeReviewLoveAlert, object: nil)
+
+// Method to handle your observer
+@objc private func observedMethod(_ notification: Notification) {
+    if let action = notification.userInfo?[PoliteReviewNotification.loveAlert] as? Bool {
+        if action == true {
+            // Do stuff when user likes your app - they may have left a rating
+        } else {
+            // Do stuff when user did not like your app
+        }
+}
+```
+
+
 

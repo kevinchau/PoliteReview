@@ -8,7 +8,7 @@
 
 import Foundation
 
- enum UserDefaultKeys: String {
+enum UserDefaultKeys: String {
     case politeReviewTotalLaunchCount
     case politeReviewVersionLaunchCount
     case politeReviewReviewedVersion
