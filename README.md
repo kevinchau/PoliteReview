@@ -16,8 +16,8 @@ Polite Review is an elegant way to request ratings and reviews from your users.
 
 ## Coming Soon
 
-* Notifications for analytics within your app
 * Swift 4
+* Tests
 
 # Getting Started
 
