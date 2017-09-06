@@ -68,7 +68,7 @@ class ViewController: UIViewController {
 ```
 
 ## Notifications
-PoliteReview supports KVO. You can use these to trigger analytics events, or for other things. They will report with `userInfo` for the result of the action, with yes as `true` and no as `false`
+PoliteReview supports Notifications. You can use these to trigger analytics events, or for other things. They will report with `userInfo` for the result of the action, with yes as `true` and no as `false`
 
 `Notification.Name` is extended, and you may observe the following.
 * `.politeReviewLoveAlert` with `userInfo`: `PoliteReviewNotification.loveAlert`
